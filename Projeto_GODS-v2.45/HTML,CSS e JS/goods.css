@@ -1,0 +1,158 @@
+@media (max-width: 768px) {
+    /* Estilos para telas menores, smartphones */
+    .card {
+      width: auto;
+    }    
+    .carousel-item img.full-screen {
+      display: none; /* Esconde a imagem de tela cheia */
+  }
+  .carousel-item img.smartphone {
+    width: 100%;
+    height: auto;
+    display: block; /* Exibe a imagem para smartphones */
+  }
+  }
+  
+  .carousel-item img.full-screen {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .module h1 span {
+    color: #db0606;
+  }
+  
+  .container h2 span{
+     color: #db0606;
+  }
+  
+  p span{
+    color:#db0606;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  a:hover {
+    color: #ff0000; /* Substitua com a cor desejada */
+    text-decoration: none; /* Remove a linha sublinhada */
+  }
+  
+  .link {
+    display: inline-block; /* Isso permite ajustar o tamanho */
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+  }
+  
+  .link:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+  }
+  
+  .btn.btn-outline-dark:hover {
+    background-color: #ff0000; /* Altere a cor de fundo para vermelho ao passar o mouse */
+    color: white; /* Altere a cor do texto para branco ao passar o mouse */
+  }
+  
+  .logo1{
+    width: 50%;
+  }
+  
+  .logo3{
+    width: 30%;
+    height: auto;
+  }
+  
+  .navbar-toggler {
+    margin-left: 10px; /* Ajuste o valor conforme necessário */
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+  }
+  
+  @media (max-width: 767px) {
+    .card-deck {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Visualização "computador" em tela cheia Rodapé*/
+  
+  @media (min-width: 768px) {
+    .boxs {
+      display: inline-block;
+      width: 25%;
+    }
+  }
+  
+  /* Visualização "celular" em tela menor Rodapé*/
+  
+  @media (max-width: 767px) {
+    .boxs {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* fontes menores em proporção de tela menor */
+  @media (max-width: 767px) {
+    .experimente {
+      font-size: 5vw;
+    }
+    .text1 h1 {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+  }
+  
+  
+/* arrumando menu hamburguer*/
+
+.logo3 {
+    margin-right: 60px; /* Ajuste o valor como preferir */
+  }
+
+.navbar-toggler {
+    margin-left: -60px; /* Ajuste o valor como preferir */
+  }
+  
+/*cor itens barra de tarrefa mobile*/
+.navbar-nav .nav-link:hover
+ {
+  background-color: #1467c5; /* Substitua #sua_cor_desejada pela cor que você quer */
+}
+
+/*Arrumando o botão ifood*/
+.btn-contato {
+  margin-top: -15px;
+}
+
+.card-deck .card:nth-child(1) .btn {
+  margin-top: 10px; /* Ajuste o valor de acordo com a sua preferência */
+}
+.card-deck .card:nth-child(2) .btn {
+  margin-top: 30px; /* Ajuste o valor de acordo com a sua preferência */
+}
+
+.card-deck .card:nth-child(3) .btn {
+  margin-top: -5px; /* Ajuste o valor de acordo com a sua preferência */
+}
+
+.card-deck .card:nth-child(4) .btn {
+  margin-top: 40px; /* Ajuste o valor de acordo com a sua preferência */
+}
+
+.card-deck .card:nth-child(5) .btn {
+  margin-top: 20px; /* Ajuste o valor de acordo com a sua preferência */
+}
+

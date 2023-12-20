@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  html {
+    height: 500vh;
+  }
+  
+  .logo{
+    width:50%;
+  }
+  
+  
+  .banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* Defina um valor maior de z-index */
+  }
+  
+  
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9;
+  }
+  
+  header.rolagem {
+    background-color: #fff;
+    padding: 20px 4%;
+  }
+  
+  header i{
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  header.rolagem a {
+    color: #db0606;
+  }
+  
+  header ul{
+    list-style-type: none;
+    display: flex; /* Use flex para alinhar os itens horizontalmente */
+    justify-content: space-around; /* Espaçamento igual entre os itens */
+    align-items: center; /* Alinhe verticalmente no centro */
+    margin-right: 10px; /* Adicione algum espaço à direita para separar o botão "Contato" */
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.2s,color 0.2s;
+  }
+  
+   /* Quando o mouse estiver sobre um item do menu */
+  header ul li:hover {
+      transform: scale(1.2); /* Aumenta o tamanho em 10% */
+      color:#e2e600;  
+  }
+  
+  
+  header ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  .btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #db0606;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  
+  .text1 h1 {
+    font-size: 4em;
+    color:#000;
+  }
+
+  .experimente {
+    text-align: center;
+    font-size: 4em;
+    color:#000;
+  }
+  .experimente span {
+    color: #db0606;
+  }
+  
+  .text1 h1 span {
+    color: #db0606;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 900;
+    color: #000;
+    z-index: 1;
+  }
+  
+  .wrapper {
+    width: 100%;
+    margin: o auto;
+  }
+  
+  main {
+    display: block;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+  }
+  
+  section.module p {
+    margin-bottom: 40px;
+  }
+  
+  section.module:last-child {
+    margin-bottom: 0;
+  }
+  
+  section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  section.module.content {
+    padding: 40px 0;
+    background: #ffffff;
+  }
+  
+  section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  }
+  
+  section.module.parallax-1 {
+    background-image: url(/Projeto_GODS-v2.45/img/backgrond1.jpg);
+  }
+  
+  section.module.parallax-2 {
+    background-image: url(/Projeto_GODS-v2.45/img/backgrond2.jpg);
+  }
+  
+  section.module.parallax-3 {
+    background-image: url(/Projeto_GODS-v2.45/img/backgrond3.jpg);
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 0;
+    text-transform: uppercase;
+  }
+
+
+/* Remove os botões dos cards no modo mobile */
+@media (max-width: 768px) {
+  .card .btn {
+    display: none;
+  }
+}
